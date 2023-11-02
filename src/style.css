@@ -1,23 +1,44 @@
-/* colors to use
-.first-color {
-    background: #2e94b9;
+:root {
+    --primary-color: #2e94b9;;
+    --secondary-color: #475053;
+    --highlight-color: #f0fbff;
+    --box-shadow: 0 5px 10px #007cb9;
+    --background: #acdcee
 }
-
-.second-color {
-    background: #475053;
-}
-
-.third-color {
-    background: #acdcee;
-}
-
-.fourth-color {
-    background: #f0fbff;
-}
-
-
-*/
 
 body {
-    background-color: #acdcee;
+    margin: 60px auto;
+    max-width: 800px;
+    background-color: var(--background);
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+h3 {
+    
+    opacity: 0.7;
+}
+
+p {
+    color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+.links:hover {
+    font-weight: bolder;
+    font-size: larger;
 }
