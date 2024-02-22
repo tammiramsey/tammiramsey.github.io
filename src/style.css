@@ -55,9 +55,13 @@ nav ul {
 nav li {
     display: inline;
     list-style: none;
-    line-height: 40px;
+    line-height: 10px;
     margin-left: 20px;
     font-size: 18px;
+}
+
+.dropdown-item {
+    margin-bottom: 7px;
 }
 
 
@@ -151,7 +155,7 @@ nav li {
 
     .name {
         display: contents;
-        color: #6A0F57;
+        color: var(--primary-color);
         font-weight: 600;
     }
 }
