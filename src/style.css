@@ -1,15 +1,16 @@
 :root {
-    --primary-color: #2e94b9;;
-    --secondary-color: #475053;
-    --highlight-color: #f0fbff;
-    --box-shadow: 0 5px 10px #007cb9;
-    --background: #acdcee
+    --primary-color: #d5eeff;
+    --secondary-color: #007cb9;
+    --highlight-color: #fc8218a9;
+    --box-shadow: 0 5px 5px #606470;
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Shadows Into Light Two', cursive;
 }
 
 body {
     margin: 60px auto;
     max-width: 800px;
-    background-color: var(--background);
+    background-color: var(--primary-color);
 }
 
 h1,
@@ -17,12 +18,8 @@ h2,
 h3 {
     text-align: center;
     margin: 0;
-    color: var(--primary-color);
-}
-
-h3 {
-    
-    opacity: 0.7;
+    color: rgba(0, 0, 0, 0.75);
+    font-family: var(--secondary-font);
 }
 
 p {
@@ -36,6 +33,48 @@ p {
 
 footer {
     text-align: center;
+}
+
+.logo {
+    max-height: 95px;
+}
+
+.name {
+    display: none;
+}
+
+nav {
+    padding: 15px;
+    align-items:end;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    line-height: 40px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+
+.hero {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 160px 20px;
+}
+
+.hero h1 {
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.hero p {
+    font-family: var(--primary-font);
+    margin: 0px;
 }
 
 .content {
@@ -52,7 +91,9 @@ footer {
 }
 
 .btn-branding {
-    background: var(--primary-color);
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
     border-radius: 4px;
     font-size: 18px;
     line-height: 27px;
@@ -60,8 +101,14 @@ footer {
     margin: auto;
 }
 
+.btn-branding:hover{
+    background-color: var(--highlight-color);
+    color: black;
+    border: 1px solid #606470;
+}
+
 .btn-branding-outline {
-    background: var(--primary-color);
+    background: var(--highlight-color);
     border: 1px solid var(--secondary-color);
     border-radius: 4px;
     color: white;
@@ -76,6 +123,35 @@ footer {
 }
 
 .button-link {
+    align-items: center;
     width: 100%;
     margin: auto;
+    
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 38px;
+    }
+    .hero {
+        padding: 80px 20px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .name {
+        display: contents;
+        color: #6A0F57;
+        font-weight: 600;
+    }
 }
