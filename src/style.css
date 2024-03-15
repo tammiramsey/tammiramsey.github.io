@@ -8,8 +8,8 @@
 }
 
 body {
-    margin: 60px auto;
-    max-width: 800px;
+    margin: 50px auto;
+    max-width: 1200px;
     background-color: var(--primary-color);
 }
 
@@ -81,6 +81,15 @@ nav li {
     margin: 0px;
 }
 
+.feature {
+    font-family: var(--primary-font);
+    font-size: 35px;
+}
+
+.project-description {
+    padding: 10px;
+}
+
 .content {
     padding: 40px 20px;
 }
@@ -102,7 +111,6 @@ nav li {
     font-size: 18px;
     line-height: 27px;
     padding: 8px 15px;
-    margin: auto;
 }
 
 .btn-branding:hover{
@@ -133,6 +141,14 @@ nav li {
     
 }
 
+.content-container {
+    margin: 15px;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+
+
 @media (max-width: 600px) {
     h1 {
         font-size: 48px;
@@ -157,5 +173,15 @@ nav li {
         display: contents;
         color: var(--primary-color);
         font-weight: 600;
+    }
+
+    .project-description {
+        padding: 0;
+        text-align: center;
+    }
+
+    .btn-branding {
+        padding: 0;
+        margin: 0;
     }
 }
