@@ -47,7 +47,7 @@ footer {
 
 nav {
     padding: 15px;
-    align-items:end;
+    align-items: end;
 }
 
 nav ul {
@@ -115,7 +115,7 @@ nav li {
     padding: 8px 15px;
 }
 
-.btn-branding:hover{
+.btn-branding:hover {
     background-color: var(--highlight-color);
     color: black;
     border: 1px solid #606470;
@@ -140,7 +140,7 @@ nav li {
     align-items: center;
     width: 100%;
     margin: auto;
-    
+
 }
 
 .content-container {
@@ -153,6 +153,46 @@ nav li {
     margin-top: calc(2rem * 1) !important;
 }
 
+aside ul {
+    list-style: none;
+    padding: 30px;
+    text-size-adjust: 125%;
+}
+
+.fratstory {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 160px 20px;
+}
+
+.fratstory h1 {
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.fratstory p {
+    font-family: var(--primary-font);
+    margin: 0px;
+    font-weight: lighter;
+}
+
+.frat-img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.caption {
+    font-size: 18px;
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    text-align: center;
+    margin-top: 10px;
+    opacity: 0.8;
+}
 
 
 @media (max-width: 600px) {
@@ -163,7 +203,9 @@ nav li {
     h2 {
         font-size: 38px;
     }
-    .hero {
+
+    .hero,
+    .fratstory {
         padding: 80px 20px;
     }
 
