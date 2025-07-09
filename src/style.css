@@ -170,6 +170,12 @@ aside ul {
     font-size: 60px;
 }
 
+.fratstory h2 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
 .fratstory p {
     font-family: var(--primary-font);
     margin: 0px;
